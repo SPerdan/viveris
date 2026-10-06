@@ -48,11 +48,13 @@
             padding: 2rem 0;
         }
 
-        .logo-header {
-            max-width: 220px;
+        .logo-img {
+            max-width: 320px;
             height: auto;
-            margin-bottom: 1.25rem;
-            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+            border: 1px solid var(--border-color);
         }
 
         h1 {
@@ -155,15 +157,6 @@
             color: var(--accent-green);
         }
 
-        .business-card-img {
-            width: 100%;
-            height: auto;
-            border-radius: 0.75rem;
-            border: 1px solid var(--border-color);
-            margin-top: 0.5rem;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-        }
-
         .cert-box, .bank-box {
             font-family: monospace;
             background: rgba(0, 0, 0, 0.4);
@@ -172,7 +165,7 @@
             border-radius: 0.5rem;
             color: #e5e7eb;
             font-size: 0.85rem;
-            margin-top: 0.5rem;
+            margin-top: 0.75rem;
             line-height: 1.5;
         }
 
@@ -225,8 +218,8 @@
 
     <div class="container">
         <header>
-            <!-- Primarni 3D Logo v glavi -->
-            <img src="Viveris_Logo-05_Cropped.jpeg" alt="Viveris LLC Logo" class="logo-header">
+            <!-- Vizitka slika v glavi -->
+            <img src="Viveris_Logo-Card-VisitCard-01_Cropped.jpg" alt="Viveris LLC Logo" class="logo-img">
             <h1>Viveris LLC</h1>
             <p class="tagline">Enterprise Infrastructure & Systems Engineering</p>
             
@@ -247,6 +240,50 @@
                 </ul>
             </div>
 
-            <!-- Vizitka v svoji kartici -->
             <div class="card">
-                <h3> Verified Profile
+                <h3> Verified Credentials</h3>
+                <p>Enterprise Systems Competency & Certification:</p>
+                <div class="cert-box">
+                    <strong>RHCE #123-456-789</strong><br>
+                    <strong>Status:</strong> RHEL 8/9 Certified
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <h3> Payment & Banking Details</h3>
+                <p>Official settlement accounts for Viveris LLC via Wise Business:</p>
+                
+                <div class="bank-grid">
+                    <div class="bank-box">
+                        <strong style="color: #60a5fa;">USD Settlement Account (US / Global)</strong><br>
+                        <strong>Bank:</strong> Wise US Inc.<br>
+                        <strong>Account No:</strong> 219243757147<br>
+                        <strong>Routing (ACH/Wire):</strong> 101019628<br>
+                        <strong>SWIFT/BIC:</strong> TRWIUS35XXX<br>
+                        <a href="assets/account-details_USD.pdf" target="_blank" class="btn-pdf">📄 Download USD Details (PDF)</a>
+                    </div>
+
+                    <div class="bank-box">
+                        <strong style="color: #34d399;">EUR Settlement Account (EU / SEPA)</strong><br>
+                        <strong>Bank:</strong> Wise Europe SA<br>
+                        <strong>IBAN:</strong> BE15 9030 2550 9130<br>
+                        <strong>SWIFT/BIC:</strong> TRWIBEB1XXX<br>
+                        <strong>Location:</strong> Brussels, Belgium<br>
+                        <a href="assets/Viveris-proof-of-account-ownership_EU.pdf" target="_blank" class="btn-pdf">📄 Proof of Account Ownership (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Viveris LLC. All rights reserved.</p>
+        <div class="legal-info">
+            <span><strong>Registered Entity:</strong> Viveris LLC</span>
+            <span><strong>EIN:</strong> 35-2983328</span>
+            <span><strong>Address:</strong> 30 N Gould St, Ste R, Sheridan, WY 82801, USA</span>
+        </div>
+    </footer>
+
+</body>
+</html>
